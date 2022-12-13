@@ -1627,12 +1627,6 @@ input:required {
   width: 400px;
   z-index: 1;
   margin-bottom: 70px; }
-
-  @media only screen and (max-width: 600px) {
-    .single-blog-area {
-      width: 300px;
-    }
-  }
   
   .single-blog-area .single-blog-thumb {
     width: inherit;
@@ -1694,6 +1688,38 @@ input:required {
   .single-blog-area.style-2 {
     background-color: #ffffff;
     box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15); }
+
+    @media only screen and (min-width: 361px) and (max-width: 600px) {
+      .single-blog-area {
+        width: 250px;
+      }
+      .single-blog-area .single-blog-text .blog-title {
+        font-size: 15px;
+      }
+      .single-blog-area .single-blog-text p{
+        font-size: 12px;
+      }
+  
+      .single-blog-area .single-blog-thumb {
+        height: 200px;
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .single-blog-area {
+        width: 200px;
+      }
+      .single-blog-area .single-blog-text .blog-title {
+        font-size: 13px;
+      }
+      .single-blog-area .single-blog-text p{
+        font-size: 10px;
+      }
+  
+      .single-blog-area .single-blog-thumb {
+        height: 150px;
+      }
+    }
 
 .blog-btn {
   position: absolute;
