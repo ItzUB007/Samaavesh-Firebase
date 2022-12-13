@@ -13,8 +13,8 @@ if ($num % 2 == 0) {
 }
 
 $('.my-card').click(function() {
-  $slide = 400;//$('.active').width();
-  console.log($('.active').width());
+  $slide = $('.single-blog-area').width();//400;
+  console.log($('.single-blog-area').width());
   console.log($('.active').position().left);
   
   if ($(this).hasClass('next')) {

@@ -912,10 +912,10 @@ input:required {
           font-size: 60px; } }
       @media only screen and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
-          font-size: 30px; } }
+          font-size: 42px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
-          font-size: 42px; } }
+          font-size: 45px; } }
       .single-welcome-slide .welcome-text h2::after {
         position: absolute;
         content: "";
@@ -928,11 +928,11 @@ input:required {
         background-image: -ms-linear-gradient(120deg, #d00000 0%, #ffba08 100%); }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .single-welcome-slide .welcome-text h2::after {
-            top: 40px;
-            height: 15px; } }
+            top: 42px;
+            height: 20px; } }
         @media only screen and (max-width: 767px) {
           .single-welcome-slide .welcome-text h2::after {
-            top: 45px;
+            top: 20px;
             height: 20px;
             right: 0;
             width: 240px; } }
@@ -957,7 +957,7 @@ input:required {
                   font-size: 30px; } }
               @media only screen and (max-width: 767px) {
                 .single-welcome-slide .welcome-text h4 {
-                  font-size: 150px; } }
+                  font-size: 21px; } }
               @media only screen and (min-width: 480px) and (max-width: 767px) {
                 .single-welcome-slide .welcome-text h4 {
                   font-size: 21px; } }
@@ -973,11 +973,11 @@ input:required {
                 background-image: -ms-linear-gradient(120deg, #d00000 0%, #ffba08 100%); }
                 @media only screen and (min-width: 768px) and (max-width: 991px) {
                   .single-welcome-slide .welcome-text h4::after {
-                    top: 40px;
+                    top: 20px;
                     height: 15px; } }
                 @media only screen and (max-width: 767px) {
                   .single-welcome-slide .welcome-text h4::after {
-                    top: 22px;
+                    top: 10px;
                     height: 20px;
                     right: 0;
                     width: 120px; } }
@@ -1620,18 +1620,29 @@ input:required {
         padding-left: 15px;
         padding-right: 15px; } }
 
+
+
 .single-blog-area {
   position: relative;
   width: 400px;
   z-index: 1;
   margin-bottom: 70px; }
+
+  @media only screen and (max-width: 600px) {
+    .single-blog-area {
+      width: 300px;
+    }
+  }
+  
   .single-blog-area .single-blog-thumb {
-    width: 400px;
+    width: inherit;
     height: 250px;
     border-radius: 10px 10px 0 0;
     overflow: hidden; }
     .single-blog-area .single-blog-thumb img {
       border-radius: 10px 10px 0 0;
+      min-width: 100%;
+      min-height: 100%;
       -webkit-transition-duration: 800ms;
       -o-transition-duration: 800ms;
       transition-duration: 800ms; }

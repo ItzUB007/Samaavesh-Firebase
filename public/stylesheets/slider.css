@@ -43,6 +43,12 @@ html body .heading a .fab {
   margin-top: 0.5rem;
 }*/
 
+@media only screen and (min-width: 200px) and  (max-width: 600px) {
+  .card-carousel .my-card {
+    width: 300px;
+  }
+}
+
 .card-carousel {
   left: 0;
   display: flex;
