@@ -447,7 +447,7 @@ input:required {
     font-weight: 400; }
   .section-heading-2 h4 {
     font-size: 38px;
-    color: #ffffff;
+    color: #ffba08;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 1px; }
@@ -1447,17 +1447,16 @@ input:required {
           padding-left: 15px;
           padding-right: 15px; } }
 
+
+
 .single-speaker-area {
-  width: 100%;
-  height: auto;
   position: relative;
   z-index: 1;
   overflow: hidden;
   margin-bottom: 40px;
   border-radius: 10px; }
   .single-speaker-area .speaker-single-thumb {
-    /*height: 150px;
-    width: 100px;*/
+    height: 400px;
     position: relative;
     z-index: 1;
     border-radius: 10px; }
@@ -1467,7 +1466,11 @@ input:required {
       -o-transition-duration: 1500ms;
       transition-duration: 1500ms;
       border-radius: 10px;
-      width: 100%; }
+      height: auto;
+      width: auto;
+      min-height: 100%;
+      min-width: 100%;
+     }
   .single-speaker-area .social-info {
     position: absolute;
     top: -180px;
@@ -2815,14 +2818,16 @@ input:checked + .card {
 .our-sponsor-client-area {
   position: relative;
   z-index: 1;
-  background-color: #ffba08; }
+  background-color: #fcfcfc; }
+
+
 
 
 .single-sponsor-text{
   position: absolute;
   padding: 20px;
   text-align: justify;
-  color: white;
+  color: #ffba08;
   opacity: 1;
 }
 
