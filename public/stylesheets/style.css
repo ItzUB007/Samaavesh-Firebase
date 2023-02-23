@@ -45,6 +45,53 @@ Last Update: March 14, 2019
 @import url(css/style.css);
 /* :: 01.0 Reboot Area CSS */
 
+.gallery{
+  height: auto;
+  width: 100%;
+  padding-top: 100px;
+  background-color: #ffba08;
+}
+
+.wrapper {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper span {
+  z-index: 1;
+  grid-column: span 2;
+  width: 300px;
+  height: 300px;
+  margin-bottom: -52%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: scale(1);
+  transition: all 0.25s;
+}
+.wrapper span:nth-child(7n+1) {
+  grid-column: 2/span 2;
+}
+.wrapper span:hover {
+  z-index: 2;
+  transform: scale(2);
+}
+
+.wrapper span img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+
 .nav-brand img{
   height: 90px;
   width: auto;
@@ -1457,6 +1504,7 @@ input:required {
   border-radius: 10px; }
   .single-speaker-area .speaker-single-thumb {
     height: 400px;
+    width: auto;
     position: relative;
     z-index: 1;
     border-radius: 10px; }
@@ -1470,6 +1518,7 @@ input:required {
       width: auto;
       min-height: 100%;
       min-width: 100%;
+      object-fit: cover;
      }
   .single-speaker-area .social-info {
     position: absolute;
@@ -3027,5 +3076,9 @@ input:checked + .card {
         margin-bottom: 0; }
       .call-to-action-content .event-time p i {
         margin-right: 3px; }
+
+
+
+        
 
 /*# sourceMappingURL=style.css.map */
