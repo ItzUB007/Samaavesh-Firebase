@@ -1,0 +1,66 @@
+  /**
+   * * Page background
+   * */
+   .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /*background: #ccc;
+    //background-size: cover;*/
+  }
+  .user_options-container {
+    position: relative;
+    width: 100%;
+  }
+  .user_options-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.85);
+    border-radius: 3px;
+  }
+
+
+/**
+   * * Registered and Unregistered user box and text
+   * */
+   .user_options-registered,
+   .user_options-unregistered {
+     width: 50%;
+     padding: 75px 45px;
+     color: #fff;
+     font-weight: 300;
+   }
+   
+   .user_registered-title,
+   .user_unregistered-title {
+     margin-bottom: 15px;
+     font-size: 1.66rem;
+     line-height: 1em;
+   }
+   
+   .user_unregistered-text,
+   .user_registered-text {
+     font-size: 0.83rem;
+     line-height: 1.4em;
+   }
+   
+   .user_registered-login,
+   .user_unregistered-signup {
+     margin-top: 30px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     padding: 10px 30px;
+     color: #fff;
+     text-transform: uppercase;
+     line-height: 1em;
+     letter-spacing: 0.2rem;
+     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+   }
+   .user_registered-login:hover,
+   .user_unregistered-signup:hover {
+     color: rgba(34, 34, 34, 0.85);
+     background-color: #ccc;
+   }

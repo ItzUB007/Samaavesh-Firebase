@@ -45,6 +45,48 @@ Last Update: March 14, 2019
 @import url(css/style.css);
 /* :: 01.0 Reboot Area CSS */
 
+#countdown{
+  padding-bottom: 50px;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 16px;
+  list-style-type: none;
+  padding: 2em;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d00000;
+  border: solid 2px #d000003e;
+}
+
+#countdown li span {
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+@media all and (max-width: 768px) {
+  #countdown h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  #countdown li {
+    font-size: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  
+  #countdown li span {
+    font-size: 16px;
+  }
+}
+
+
 .gallery{
   height: auto;
   width: 100%;
